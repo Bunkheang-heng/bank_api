@@ -1,0 +1,82 @@
+# ---- OS / Editor noise ----
+.DS_Store
+*.DS_Store?
+Thumbs.db
+
+# VS Code / IDEs
+.vscode/
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.sln.iml
+
+# JetBrains Rider caches
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+# ---- .NET / Build artifacts ----
+bin/
+obj/
+out/
+[Bb]uild/
+[Ll]og/
+logs/
+
+# Publish
+publish/
+*.pubxml
+*.pubxml.user
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Coverage / Test
+coverage/
+TestResults/
+*.coverage
+*.coveragexml
+*.opencover.xml
+*.lcov
+
+# ASP.NET static build outputs (if used)
+wwwroot/dist/
+wwwroot/build/
+
+# Local settings / secrets
+secrets.json
+local.settings.json
+.env
+.env.*
+
+# Databases (if any local dev dbs)
+*.db
+*.sqlite
+*.sqlite3
+*.db-wal
+*.db-shm
+
+# Node (if integrating a frontend)
+node_modules/
+dist/
+
+# Visual Studio database
+*.VC.db
+*.VC.VC.opendb
+
+# Logs
+*.log
+*.tlog
