@@ -1,0 +1,20 @@
+version: '3.9'
+services:
+  postgres:
+    image: postgres:16
+    container_name: cyber_bank_postgres
+    environment:
+      POSTGRES_USER: cyberbank
+      POSTGRES_PASSWORD: cyberbank@123
+      POSTGRES_DB: cyberbank
+    ports:
+      - "6001:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $POSTGRES_USER -d $POSTGRES_DB"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+volumes:
+  postgres_data:

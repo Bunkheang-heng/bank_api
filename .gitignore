@@ -80,3 +80,6 @@ dist/
 # Logs
 *.log
 *.tlog
+
+# App data
+Data/users.json
